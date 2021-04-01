@@ -1,13 +1,12 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-#include "time.h"
-#include "SDL/SDL.h"
+#include <time.h>
+#include <SDL/SDL.h>
 #include <SDL/SDL_image.h>
-#include<math.h>
+#include <math.h>
+#include <SDL/SDL_ttf.h>
 #include "enigme.h"
-
-#include "SDL/SDL_ttf.h"
 
 int main(void)
 { SDL_Surface *screen; 

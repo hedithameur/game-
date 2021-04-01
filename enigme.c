@@ -1,11 +1,11 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-#include "time.h"
-#include "SDL/SDL.h"
+#include <time.h>
+#include <SDL/SDL.h>
 #include <SDL/SDL_image.h>
-#include<math.h>
-#include "SDL/SDL_ttf.h"
+#include <math.h>
+#include <SDL/SDL_ttf.h>
 #include "enigme.h"
 
 int generate_question(int*n)
@@ -94,44 +94,44 @@ int reponse(int *rep )
        case SDL_KEYDOWN : 
             switch( event.key.keysym.sym )
                 {
-			  case  SDLK_KP1: 
+			  case  SDLK_1: 
 			  r= 1;(*rep)=(r*100);
 				continuer=0;
 			   break ;
-			   case  SDLK_KP2 :
+			   case  SDLK_2 :
 			   r= 2;(*rep)=(r*100);
 				continuer=0;
 			   break;
-			   case SDLK_KP3: 
+			   case SDLK_3: 
 			   r=3 ;(*rep)=(r*100);
 			continuer=0;
 			  break;
 			    
-                          case  SDLK_KP4: 
+                          case  SDLK_4: 
 			  r= 4;(*rep)=(r*100);
 				continuer=0;
 			   break ; 
-                           case  SDLK_KP5: 
+                           case  SDLK_5: 
 			  r= 5;(*rep)=(r*100);
 				continuer=0;
 			   break ;
-                           case  SDLK_KP6: 
+                           case  SDLK_6: 
 			  r= 6;(*rep)=(r*100);
 				continuer=0;
 			   break ;
-                         case  SDLK_KP7: 
+                         case  SDLK_7: 
 			  r= 7;(*rep)=(r*100);
 				continuer=0;
 			   break ;
-                           case  SDLK_KP8: 
+                           case  SDLK_8: 
 			  r= 8;(*rep)=(r*100);
 				continuer=0;
 			   break ;
-                           case  SDLK_KP9: 
+                           case  SDLK_9: 
 			  r= 9;(*rep)=(r*100);
 				continuer=0;
 			   break ;
-                            case  SDLK_KP0: 
+                            case  SDLK_0: 
 			  r= 0;(*rep)=(*rep)+z;
 				continuer=0;
 			   break ;
@@ -154,36 +154,36 @@ int reponse(int *rep )
        case SDL_KEYDOWN : 
             switch( event.key.keysym.sym )
                 {
-			  case  SDLK_KP1: 
+			  case  SDLK_1: 
 			  y= 1;(*rep)=(*rep)+(y*10);
 				continuer=0;
 			   break ;
-			   case  SDLK_KP2 :
+			   case  SDLK_2 :
 			   y= 2;(*rep)=(*rep)+(y*10);
 				continuer=0;
 			   break;
-			   case SDLK_KP3: 
+			   case SDLK_3: 
 			   y=3 ;(*rep)=(*rep)+(y*10);
 			continuer=0;
 			  break;
 			    
-                          case  SDLK_KP4: 
+                          case  SDLK_4: 
 			  y= 4;(*rep)=(*rep)+(y*10);
 				continuer=0;
 			   break ; 
-                           case  SDLK_KP5: 
+                           case  SDLK_5: 
 			  y= 5;(*rep)=(*rep)+(y*10);
 				continuer=0;
 			   break ;
-                           case  SDLK_KP6: 
+                           case  SDLK_6: 
 			  y= 6;(*rep)=(*rep)+(y*10);
 				continuer=0;
 			   break ;
-                         case  SDLK_KP7: 
+                         case  SDLK_7: 
 			  y= 7;(*rep)=(*rep)+(y*10);
 				continuer=0;
 			   break ;
-                           case  SDLK_KP8: 
+                           case  SDLK_8: 
 			  y= 8;(*rep)=(*rep)+(y*10);
 				continuer=0;
 			   break ;
@@ -191,7 +191,7 @@ int reponse(int *rep )
 			  y= 9;(*rep)=(*rep)+(y*10);
 				continuer=0;
 			   break ;
-                             case  SDLK_KP0: 
+                             case  SDLK_0: 
 			  y= 0;(*rep)=(*rep)+z;
 				continuer=0;
 			   break ;
@@ -214,44 +214,44 @@ while(continuer)
        case SDL_KEYDOWN : 
             switch( event.key.keysym.sym )
                 {
-			  case  SDLK_KP1: 
+			  case  SDLK_1: 
 			  z= 1;(*rep)=(*rep)+z;
 				continuer=0;
 			   break ;
-			   case  SDLK_KP2 :
+			   case  SDLK_2 :
 			   z= 2;(*rep)=(*rep)+z;
 				continuer=0;
 			   break;
-			   case SDLK_KP3: 
+			   case SDLK_3: 
 			   z=3 ;(*rep)=(*rep)+z;
 			continuer=0;
 			  break;
 			    
-                          case  SDLK_KP4: 
+                          case  SDLK_4: 
 			  z= 4;(*rep)=(*rep)+z;
 				continuer=0;
 			   break ; 
-                           case  SDLK_KP5: 
+                           case  SDLK_5: 
 			  z= 5;(*rep)=(*rep)+z;
 				continuer=0;
 			   break ;
-                           case  SDLK_KP6: 
+                           case  SDLK_6: 
 			  z= 6;(*rep)=(*rep)+z;
 				continuer=0;
 			   break ;
-                         case  SDLK_KP7: 
+                         case  SDLK_7: 
 			  z= 7;(*rep)=(*rep)+z;
 				continuer=0;
 			   break ;
-                           case  SDLK_KP8: 
+                           case  SDLK_8: 
 			  z= 8;(*rep)=(*rep)+z;
 				continuer=0;
 			   break ;
-                           case  SDLK_KP9: 
+                           case  SDLK_9: 
 			  z= 9;(*rep)=(*rep)+z;
 				continuer=0;
 			   break ;
-                            case  SDLK_KP0: 
+                            case  SDLK_0: 
 			  z= 0;(*rep)=(*rep)+z;
 				continuer=0;
 			   break ;
@@ -286,5 +286,4 @@ void afficher_resultat (SDL_Surface * screen,int solution,int r)
 	SDL_Delay(3000);
  	}
  }
-
 
